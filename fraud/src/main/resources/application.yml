@@ -1,0 +1,31 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: fraud
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: 'postgres'
+    url: jdbc:postgresql://206.189.128.85:5432/fraud
+    password: 'postgres'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  zipkin:
+    base-url: http://206.189.128.85:9411
+  rabbitmq:
+    addresses: 206.189.128.85:5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+    enabled: true
+  instance:
+    prefer-ip-address: true

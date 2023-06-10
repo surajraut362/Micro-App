@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  zipkin:
+    base-url: http://206.189.128.85:9411
