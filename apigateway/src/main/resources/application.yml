@@ -5,7 +5,7 @@ spring:
   application:
     name: api-gateway
   zipkin:
-    base-url: http://206.189.128.85:9411
+    base-url: ${ZIPKIN_URL:http://165.232.180.16:9411}
   cloud:
     gateway:
       routes:

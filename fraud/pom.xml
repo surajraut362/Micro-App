@@ -7,6 +7,8 @@
         <artifactId>MicroApp</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>jar</packaging>
+
     <groupId>com.surajraut</groupId>
     <artifactId>fraud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
