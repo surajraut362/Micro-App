@@ -5,4 +5,4 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
   zipkin:
-    base-url: http://206.189.128.85:9411
+    base-url: http://165.232.180.16:9411
